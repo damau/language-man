@@ -24,6 +24,19 @@ author     : Your Name
   # path: assets\img\clients\creative-market.jpg
   # height: 60 #height in px, defaults to 52px
 
+defaults:
+  -
+    scope:
+      path: "_posts/en"
+      type: posts
+    values:
+      lang: en
+  -
+    scope:
+      path: "_posts/es/*"
+      type: posts
+    values:
+      lang: es
 
 analytics:
   google: #Google Analytics tracking code here

@@ -9,7 +9,7 @@
 
 # English (default)
 # -----------------
-en: &DEFAULT_EN
+en:
   nav:
     - title: "About"
       section: about
@@ -21,14 +21,6 @@ en: &DEFAULT_EN
       section: contact
     - title: "En Espanga"
       url: "/es"
-en-US:
-  <<: *DEFAULT_EN
-en-CA:
-  <<: *DEFAULT_EN
-en-GB:
-  <<: *DEFAULT_EN
-en-AU:
-  <<: *DEFAULT_EN
 
 # Spanish
 # -------
@@ -44,7 +36,3 @@ es: &DEFAULT_ES
       section: contact
     - title: "English Page"
       url: "/en"
-es-ES:
-  <<: *DEFAULT_ES
-es-CO:
-  <<: *DEFAULT_ES

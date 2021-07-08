@@ -9,28 +9,24 @@
       </div>
     </div>
     <div class="row">
-      {% assign locale_posts = site.posts | where: "lang", site.data.sitetext[layout.locale].lang | limit 4 | where_exp: "post", "post.caption != nil"%}
-      {% assign base_en_posts = site.posts | where: "lang", "en" | where_exp: "post", "post.caption != nil" %}
-      {% assign highlight_posts = locale_posts | concat: locale_posts | uniq %}
+      {% assign locale_posts = site.posts | where: "lang", layout.lang | limit 4 | where_exp: "post", "post.caption_thumbnail != nil"%}
+      {% assign base_en_posts = site.posts | where: "lang", "en" | where_exp: "post", "post.caption_thumbnail != nil" %}
+
+      {% assign highlight_posts = locale_posts | concat: base_en_posts | uniq %}
+
       {% for post in highlight_posts limit: 3 %}
       <div class="col-md-4 col-sm-6 portfolio-item">
-        <a class="portfolio-link" data-toggle="modal" href="#p{{ forloop.index }}">
-          <div class="portfolio-hover">
-            <div class="portfolio-hover-content">
-              <i class="{{ site.data.style.portfolio-icon | default: "fas fa-plus fa-3x" }}"></i>
-            </div>
-          </div>
-          <img class="img-fluid" src="{{ post.caption.thumbnail }}" alt="">
+        <a class="portfolio-link" href="#">
+          <img class="img-fluid" src="{{ post.caption_thumbnail }}" alt="">
         </a>
         <div class="portfolio-caption">
-          <h4>{{ post.caption.title }}</h4>
-          <p>{{ post.date }}</p>
-          <p class="text-muted">{{ project.caption.subtitle }}</p>
-          <p>{{ post.caption.summary }}<p>
+          <h3>{{ post.title }} - {{ post.lang }}</h3>
+          
+          <p>{{ post.date | date: "%Y/%m/%d" }}</p>
+          <p class="text-muted">{{ post.excerpt }}</p>
         </div>
       </div>
       {% endfor %}
     </div>
   </div>
 </section>
-{% include modals.html %}

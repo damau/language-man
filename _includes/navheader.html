@@ -14,7 +14,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
-		  {%- for link in site.data.navigation[layout.locale].nav -%}
+		  {%- for link in site.data.navigation[layout.lang].nav -%}
 		  <li class="nav-item">
 		  {%- if link.url -%}
 		    <a class="nav-link js-scroll-trigger" href="{{ link.url }}">{{ link.title }}</a>
@@ -35,15 +35,15 @@
   <header class="masthead">
     <div class="container">
       <div class="intro-text">
-        {{ layout.locale }}
-	  {%- if site.data.sitetext[layout.locale].header.title -%}
-        <div class="intro-lead-in">{{ site.data.sitetext[layout.locale].header.title | markdownify }}</div>
+        {{ layout.lang }}
+	  {%- if site.data.sitetext[layout.lang].header.title -%}
+        <div class="intro-lead-in">{{ site.data.sitetext[layout.lang].header.title | markdownify }}</div>
 	  {%- endif -%}
-	  {%- if site.data.sitetext[layout.locale].header.text -%}
-        <div class="intro-heading text-uppercase">{{ site.data.sitetext[layout.locale].header.text | markdownify }}</div>
+	  {%- if site.data.sitetext[layout.lang].header.text -%}
+        <div class="intro-heading text-uppercase">{{ site.data.sitetext[layout.lang].header.text | markdownify }}</div>
 	  {%- endif -%}
-	  {%- if site.data.sitetext[layout.locale].header.button -%}
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{ site.data.sitetext[layout.locale].header.buttonlink }}">{{ site.data.sitetext[layout.locale].header.button }}</a>
+	  {%- if site.data.sitetext[layout.lang].header.button -%}
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{ site.data.sitetext[layout.lang].header.buttonlink }}">{{ site.data.sitetext[layout.lang].header.button }}</a>
 	  {%- endif -%}
       </div>
     </div>
