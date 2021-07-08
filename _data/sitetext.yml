@@ -34,7 +34,7 @@ en: &DEFAULT_EN
   blog:
     title: "Blog"
     text: "Lorem ipsum dolor sit amet consectetur."
-    section: portfolio
+    section: blog
     closebutton: "Close Project"
 
   timeline:
