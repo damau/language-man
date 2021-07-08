@@ -40,6 +40,7 @@ en:
   about:
     title: "About"
     text: "My Story"
+    paragraph: "I am something, something, done this, tefl that, love language because of this and that"
     section: about
 
   contact:
@@ -124,39 +125,39 @@ en:
 # -------
 es:
   header:
-    title: Hey I'm Spanish
-    text: Want to learn English from an Englishman?
-    button: Tell me more!
+    title: "!Hola!"
+    text: Vuole imparare Espanoola
+    button: Si! Dimmi
     buttonlink: "#services"
 
   services:
-    title: "Services-ES"
-    text: "Tutelage in English-ES"
+    title: "Servicio"
+    text: "Impararer"
     section: services
     list:
-      - title: "Begginner Classes"
+      - title: "Junior Lessone"
         desc: "Want to learn, join for your first free lesson"
         icon: fas fa-school #find more at https://fontawesome.com/icons
-      - title: "Business Classes"
+      - title: "Societa Lessone"
         desc: "Get sales ready with our English classes for business"
         icon: fas fa-briefcase
-      - title: "IOLTs Training"
+      - title: "IOLTs Preperazione"
         desc: "Pass the exam, get into the university you desire"
         icon: fas fa-graduation-cap
 
   blog:
     title: "Blog"
-    text: "See what's happening in the world on language"
+    text: "Vedere cos'e succede nel mondo di lingua"
     section: blog
     closebutton: "Close Project"
 
   about:
-    title: "About"
-    text: "My Story"
+    title: "Chi sono io"
+    text: "La mia storia"
     section: about
 
   contact:
-    title: "Contact me"
+    title: "Messagio"
     text: "Interested?"
     section: contact
     name: "Name*"
