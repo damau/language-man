@@ -4,10 +4,10 @@
 	  <a class="navbar-brand js-scroll-trigger" href="{{ site.baseurl }}/#">
           {%- if site.logo -%}
             <img height="{{ site.logo.height | default: 52 }}" src="{{ site.logo.path }}"/>
-          {%- else -%}
+            {%- else -%}
             {{ site.title }}
           {%- endif -%}
-      </a>
+          </a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -15,7 +15,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
 		{%- for link in site.data.navigation[site.locale].nav -%}
-		  <li class="nav-item">
+		<li class="nav-item">
 		  {%- if link.url -%}
 		    <a class="nav-link js-scroll-trigger" href="{{ link.url }}">{{ link.title }}</a>
 		  {%- else if link.section -%}
@@ -23,9 +23,8 @@
 		  {%- else -%}
 		    <a class="nav-link js-scroll-trigger" href="#">{{ link.title }}</a>
 		  {%- endif -%}
-          </li>
+                  </li>
 		{% endfor %}
-          </li>
         </ul>
       </div>
     </div>

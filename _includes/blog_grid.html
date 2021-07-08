@@ -4,12 +4,15 @@
     <div class="row">
       <div class="col-lg-12 text-center">
         <h2 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].blog.title | markdownify | default: "Blog" }} </h2>
-        <h3 class="section-subheading text-muted">{{ site.data.sitetext[site.locale].blog.text | markdownify }}</h3>
+        <h3 class="section-subheading text-muted">{{ site.data.sitetext[site.locale].blog.text | markdownify }}
+        {{ site.data.sitetext[site.locale].lang }}</h3>
       </div>
     </div>
     <div class="row">
-      {% assign front_page_posts = site.posts | where_exp: "post", "post.caption != nil " %}
-      {% for post in front_page_posts limit: 3 %}
+      {% assign locale_posts = site.posts | where: "lang", site.data.sitetext[site.locale].lang | limit 4 | where_exp: "post", "post.caption != nil"%}
+      {% assign base_en_posts = site.posts | where: "lang", "en" | where_exp: "post", "post.caption != nil" %}
+      {% assign highlight_posts = locale_posts | concat: locale_posts | uniq %}
+      {% for post in highlight_posts limit: 3 %}
       <div class="col-md-4 col-sm-6 portfolio-item">
         <a class="portfolio-link" data-toggle="modal" href="#p{{ forloop.index }}">
           <div class="portfolio-hover">
@@ -26,7 +29,7 @@
           <p>{{ post.caption.summary }}<p>
         </div>
       </div>
-	{% endfor %}
+      {% endfor %}
     </div>
   </div>
 </section>

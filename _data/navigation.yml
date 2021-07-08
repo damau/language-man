@@ -19,6 +19,9 @@ en: &DEFAULT_EN
       section: blog
     - title: "Contact"
       section: contact
+  nav_lang:
+     - title: "En Espanga"
+     - local: "es-ES"
 en-US:
   <<: *DEFAULT_EN
 #en-CA:
@@ -44,6 +47,10 @@ es: &DEFAULT_ES
       section: contacto
     - title: "Fuente de la plantilla"
       url: https://github.com/raviriley/agency-jekyll-theme/
+  nav_lang:
+    - title: "In English"
+    - local: "en-En"
+
 es-ES:
   <<: *DEFAULT_ES
 es-CO:
