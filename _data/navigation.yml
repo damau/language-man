@@ -19,38 +19,31 @@ en: &DEFAULT_EN
       section: blog
     - title: "Contact"
       section: contact
-  nav_lang:
-     - title: "En Espanga"
-     - local: "es-ES"
+    - title: "En Espanga"
+      url: "/es"
 en-US:
   <<: *DEFAULT_EN
-#en-CA:
-#  <<: *DEFAULT_EN
+en-CA:
+  <<: *DEFAULT_EN
 en-GB:
   <<: *DEFAULT_EN
-#en-AU:
-#  <<: *DEFAULT_EN
+en-AU:
+  <<: *DEFAULT_EN
 
 # Spanish
 # -------
 es: &DEFAULT_ES
   nav:
-    - title: "Servicios"
-      section: servicios
-    - title: "Portafolio"
-      section: portafolio
-    - title: "Cronología"
-      section: cronologia
-    - title: "Equipo"
-      section: equipo
-    - title: "Contáctenos"
-      section: contacto
-    - title: "Fuente de la plantilla"
-      url: https://github.com/raviriley/agency-jekyll-theme/
-  nav_lang:
-    - title: "In English"
-    - local: "en-En"
-
+    - title: "Aboutio"
+      section: about
+    - title: "Servicio"
+      section: services
+    - title: "Blogio"
+      section: blog
+    - title: "Contaccio"
+      section: contact
+    - title: "English Page"
+      url: "/en"
 es-ES:
   <<: *DEFAULT_ES
 es-CO:
