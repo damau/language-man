@@ -11,26 +11,22 @@
 # -----------------
 en: &DEFAULT_EN
   nav:
+    - title: "About"
+      section: about
     - title: "Services"
       section: services
-    - title: "Portfolio"
-      section: portfolio
-    - title: "About"
-      section: timeline
-    - title: "Team"
-      section: team
+    - title: "Blog"
+      section: blog
     - title: "Contact"
       section: contact
-    - title: "Theme Source"
-      url: https://github.com/raviriley/agency-jekyll-theme/
 en-US:
   <<: *DEFAULT_EN
-en-CA:
-  <<: *DEFAULT_EN
+#en-CA:
+#  <<: *DEFAULT_EN
 en-GB:
   <<: *DEFAULT_EN
-en-AU:
-  <<: *DEFAULT_EN
+#en-AU:
+#  <<: *DEFAULT_EN
 
 # Spanish
 # -------
