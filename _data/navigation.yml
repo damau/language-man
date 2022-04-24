@@ -15,12 +15,14 @@ en:
       section: about
     - title: "Services"
       section: services
+    - title: "Lessons"
+      section: lesson
     - title: "Blog"
       section: blog
     - title: "Contact"
       section: contact
     - title: "En Espanga"
-      url: "/es"
+      url: "/es/"
 
 # Spanish
 # -------
@@ -30,9 +32,11 @@ es: &DEFAULT_ES
       section: about
     - title: "Servicio"
       section: services
+    - title: "Gratuito Lessone"
+      section: lesson
     - title: "Blogio"
       section: blog
     - title: "Contaccio"
       section: contact
     - title: "English Page"
-      url: "/en"
+      url: "/en/"

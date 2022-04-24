@@ -38,6 +38,10 @@ defaults:
     values:
       lang: es
 
+collections:
+  lessons:
+    output: true
+
 analytics:
   google: #Google Analytics tracking code here
 

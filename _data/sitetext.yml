@@ -31,6 +31,11 @@ en:
         desc: "Pass the exam, get into the university you desire"
         icon: fas fa-graduation-cap
 
+  lesson:
+    title: "Lesson"
+    text: "Here's a small collection of some digestable English lessons"
+    link_title: "See much more here ..."
+
   blog:
     title: "Blog"
     text: "See what's happening in the world on language"
@@ -144,6 +149,11 @@ es:
       - title: "IOLTs Preperazione"
         desc: "Pass the exam, get into the university you desire"
         icon: fas fa-graduation-cap
+
+  lesson:
+    title: "Lessone"
+    text: "E qua e qualche libero classe"
+    link_title: "Appena qua a vedere di piu ..."
 
   blog:
     title: "Blog"

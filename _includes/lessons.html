@@ -1,0 +1,29 @@
+<!-- Lesson -->
+<section class="bg-light page-section" id="lesson">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">{{ site.data.sitetext[layout.lang].lesson.title | markdownify | default: "Lesson" }}</h2>
+        <h3 class="section-subheading text-muted">{{ site.data.sitetext[layout.lang].lesson.text | markdownify }}
+        {{ site.data.sitetext[layout.lang].lang }}</h3>
+      </div>
+    </div>
+    <div class="row">
+      <ul>
+        gash
+        {% assign temp = site.collections.tags %}
+        {% for category in temp %}
+        <li>{{ category | json }}</li>
+      {% endfor %}
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <a class="portfolio-link" href="#">
+        </a>
+        <div class="portfolio-caption">
+          <!-- assign lesson = category[1] | first 
+          <p>lesson.date | date: "%Y/%m/%d" </p>
+          <p class="text-muted">lesson.excerpt </p> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
