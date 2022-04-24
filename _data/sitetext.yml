@@ -10,43 +10,60 @@
 # English (default)
 # -----------------
 en:
+  meta-description: "Learn one of the following languages: Bahasa Indonesia (Indonesian), English, Russian, German and more with me Udin The Bali Language Man"
   header:
-    title: Hey I'm Josh
-    text: Want to learn English?
+    title: I'm Udin
+    text: "# I can help you learn a range of languages"
     button: Tell me more!
     buttonlink: "#services"
 
   services:
     title: "Services"
-    text: "Tutelage in English"
+    text: "Let's learn something"
     section: services
     list:
-      - title: "Begginner Classes"
-        desc: "Want to learn, join for your first free lesson"
+      - title: "Personalised Begginner Classes"
+        desc: "We can tailor a course specific to your way of learning."
         icon: fas fa-school #find more at https://fontawesome.com/icons
       - title: "Business Classes"
-        desc: "Get sales ready with our English classes for business"
+        desc: "Get sales ready with our Indonesian classes for business"
         icon: fas fa-briefcase
-      - title: "IOLTs Training"
-        desc: "Pass the exam, get into the university you desire"
-        icon: fas fa-graduation-cap
 
   lesson:
     title: "Lesson"
     text: "Here's a small collection of some digestable English lessons"
     link_title: "See much more here ..."
 
-  blog:
-    title: "Blog"
-    text: "See what's happening in the world on language"
-    section: blog
-    closebutton: "Close Project"
+  service-area:
+    title: "In Person"
+    text: "While I am happy to provide lessons online, I feel being in person has more of an impact.  Below you can see the approximate area I can travel to. (North Kuta, Kuta, Denpasar, Canggu)"
+    gmap_url: "https://www.google.com/maps/place/North+Kuta,+Kuta+Utara,+Badung+Regency,+Bali/@-8.7553666,115.1310548,12z/data=!4m13!1m7!3m6!1s0x2dd246a486d6fbd3:0x84839839faa3e26d!2sKuta,+Badung+Regency,+Bali!3b1!8m2!3d-8.7223957!4d115.1767095!3m4!1s0x2dd2388fc2de0a0b:0xdac0d412e07ae170!8m2!3d-8.6597086!4d115.1632833"
+    section: service-area
+
+  # blog:
+  #   title: "Blog"
+  #   text: "See what's happening in the world on language"
+  #   section: blog
+  #   closebutton: "Close Project"
 
   about:
     title: "About"
-    text: "My Story"
-    paragraph: "I am something, something, done this, tefl that, love language because of this and that"
-    section: about
+    text: "Little about me"
+    paragraph: "I have been working in Bali, Indonesia as part of the hospitality industry for over 10 years. I have always loved language.  When I first started learning languages, the lessons were dry and I found it took a long time to be able to communicate on any level in the language.  I felt disheartened with all the work I put in not being able to go straight out and use it.  The acedemic way of learning a language is slow but accurate. My method allows you to 'hack' your way into a language. Making it fun, quick and easy.  The other advantage of my 'cheat sheets' is that if you do not speak the language for a long time, you can simply read through them and it triggers all the memories and joy you had learning so it is always available to you and never a waste of time."
+
+  method:
+    title: "Methodology"
+    text: "My language cheat sheets"
+    method-text: "My method is personalised to you and you abilities.  I tailor a program so that you can be talking, even in small amounts, as quickly as possible.  I write a lesson, at your level, that you can read through and go out and practice as quickly as possible.  The lessons are typically conversational until you start to find your feet in the language you choose to learn."
+    language-list-desc: "I can teach you the following languages"
+    languages:
+      - Indonesian (incl business)
+      - English
+      - German
+      - Russian
+      - Manderin
+      - French
+    section: method
 
   contact:
     title: "Contact me"
@@ -146,20 +163,17 @@ es:
       - title: "Societa Lessone"
         desc: "Get sales ready with our English classes for business"
         icon: fas fa-briefcase
-      - title: "IOLTs Preperazione"
-        desc: "Pass the exam, get into the university you desire"
-        icon: fas fa-graduation-cap
 
   lesson:
     title: "Lessone"
     text: "E qua e qualche libero classe"
     link_title: "Appena qua a vedere di piu ..."
 
-  blog:
-    title: "Blog"
-    text: "Vedere cos'e succede nel mondo di lingua"
-    section: blog
-    closebutton: "Close Project"
+  # blog:
+  #   title: "Blog"
+  #   text: "Vedere cos'e succede nel mondo di lingua"
+  #   section: blog
+  #   closebutton: "Close Project"
 
   about:
     title: "Chi sono io"

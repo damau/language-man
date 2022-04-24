@@ -16,9 +16,8 @@ theme: jekyll-agency
 url    : "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 
-title      : The Englishman
+title      : The Bali Language Guru
 email      : your-email@example.com #this is also the email contact forms will go to
-description: "English Tutor"
 author     : Your Name
 # logo:     #optional, defaults to site title
   # path: assets\img\clients\creative-market.jpg

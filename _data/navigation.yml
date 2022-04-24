@@ -11,14 +11,16 @@
 # -----------------
 en:
   nav:
+    - title: "Method"
+      section: method
     - title: "About"
       section: about
     - title: "Services"
       section: services
+    - title: "Tesitmonials"
+      section: testimony
     - title: "Lessons"
       section: lesson
-    - title: "Blog"
-      section: blog
     - title: "Contact"
       section: contact
     - title: "En Espanga"
