@@ -28,6 +28,19 @@ ul.info li {
   flex: 1 0 50%;
 }
 
+@media(max-width:800px) {
+  ul.info {
+    padding: 0;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  ul.info li {
+//    flex: 1 0 50%;
+  }
+}
 p {
   font-size: 20px;
   line-height: 1.75;

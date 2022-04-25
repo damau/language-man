@@ -8,13 +8,9 @@
           <p> {{ site.data.sitetext[layout.lang].method.paragraph }}</p>
         </div>
       </div>
-      {% if site.data.sitetext[layout.lang].method.method-text %}
-      <div class="row">
-        <div class="col-lg-12 text-center text-muted">
-          <p>{{ site.data.sitetext[layout.lang].method.method-text }}</p>
-        </div>
-      </div>
-      {% endif %}
+      {% for paragraph in site.data.sitetext[layout.lang].method.paragraphs %}
+      <p class="text-muted"> {{ paragraph }}</p>
+      {% endfor %}
       {% if site.data.sitetext[layout.lang].method.languages %}
       <br>
       <div class="row centered text-muted">

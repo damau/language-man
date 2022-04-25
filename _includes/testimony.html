@@ -1,0 +1,22 @@
+<!-- Team -->
+<section class="bg-light page-section" id="{{ site.data.sitetext[site.locale].testimony.section | default: "testimony" }}">
+<div class="container">
+  <div class="row">
+	<div class="col-lg-12 text-center">
+	  <h2 class="section-heading text-uppercase">{{ site.data.sitetext[layout.lang].testimony.title }}</h2>
+	  <h3 class="section-subheading text-muted">{{ site.data.sitetext[layout.lang].testimony.text }}</h3>
+	</div>
+  </div>
+  <div class="row">
+  {% for person in site.data.sitetext[layout.lang].testimony.people %}
+	<div class="col-sm-6">
+	  <div class="team-member">
+		<img class="mx-auto rounded-circle" src="{{ person.image }}" alt="">
+		<h4>{{ person.name }}</h4>
+		<p class="text-muted">{{ person.testimony }}</p>
+	  </div>
+	</div>
+  {% endfor %}
+  </div>
+</div>
+</section>
